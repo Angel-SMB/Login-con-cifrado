@@ -1,0 +1,37 @@
+CRITICAL - 2025-10-04 01:08:25 --> require(config.php): Failed to open stream: No such file or directory
+in APPPATH\Views\login.php on line 5148.
+ 1 APPPATH\Views\login.php(5148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(config.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\login.php', 5148)
+ 2 APPPATH\Views\login.php(5148): require()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Home.php(15): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-04 01:09:16 --> php_network_getaddresses: getaddrinfo for sql211.infinityfree.com failed: Host desconocido. 
+in APPPATH\Views\config.php on line 2.
+ 1 APPPATH\Views\config.php(2): mysqli_connect('sql211.infinityfree.com', 'if0_40062158', Object(SensitiveParameterValue), 'if0_40062158_ipaddress')
+ 2 APPPATH\Views\login.php(5148): require('APPPATH\\Views\\config.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Home.php(15): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-04 01:09:46 --> Unknown database 'ipaddress'
+in APPPATH\Views\config.php on line 2.
+ 1 APPPATH\Views\config.php(2): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'ipaddress')
+ 2 APPPATH\Views\login.php(5148): require('APPPATH\\Views\\config.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('login', [], true)
+ 6 APPPATH\Controllers\Home.php(15): view('login')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-10-04 01:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
